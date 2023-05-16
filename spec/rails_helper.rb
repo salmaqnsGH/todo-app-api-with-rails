@@ -35,6 +35,9 @@ RSpec.configure do |config|
   # config.filter_rails_from_backtrace!
 
   config.include RequestSpecHelper, type: :request
+  config.include RequestSpecHelper
+  config.include ControllerSpecHelper
+  
   # add `FactoryBot` methods
   config.include FactoryBot::Syntax::Methods
 
